@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  centos:
+    build:
+      context: .
+      dockerfile: centos/Dockerfile
+    image: ${USER}/centos-x2go
+    ports:
+     - "2222:22"
+
+  # xubuntu:
+  #   build:
+  #     context: .
+  #     dockerfile: centos/Dockerfile
+  #   image: ${USER}/xubuntu-x2go
+  #   ports:
+  #    - 2223:22
